@@ -415,7 +415,7 @@ func main() {
 
 	Printlnf(" (i) Installed certificate: %s", certificateIdentity)
 
-	exportEnvironmentWithEnvman("BITRISE_CODE_SIGN_IDENTITY", certificateIdentity)
+	// exportEnvironmentWithEnvman("BITRISE_CODE_SIGN_IDENTITY", certificateIdentity)
 
 	//
 	// Install provisioning profiles
@@ -467,7 +467,7 @@ func main() {
 		}
 
 		if len(provisioningProfileURLs) == 1 {
-			exportEnvironmentWithEnvman("BITRISE_PROVISIONING_PROFILE_ID", profileUUID)
+			// exportEnvironmentWithEnvman("BITRISE_PROVISIONING_PROFILE_ID", profileUUID)
 		}
 	}
 
